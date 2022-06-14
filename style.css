@@ -36,6 +36,7 @@ html {
     list-style: none;
     justify-content: flex-end;
     align-items: center;
+    flex-flow: wrap;
 }
 
 .nav-link {
@@ -73,6 +74,7 @@ html {
     letter-spacing: 5px;
     color: #021004;
     padding-top: 20px;
+    padding-left: 20px;
   }
 
   .section-subtitle {
@@ -182,20 +184,45 @@ html {
     }
   }
 
-  @media (max-width: 920px) {
+  @media (max-width: 960px) {
       .img {
           max-width: 200px;
           max-height: 200px;
+          margin: 20px;
       }
       .section-code {
           font-size: 8px;
       }
   }
 
-@media (max-width: 768px) {
+  @media (max-width: 860px) {
 
     .section-title {
         font-size: 16px;
     }
 }
 
+@media (max-width: 780px) {
+    .section-title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-comtainer {
+        display: flex;
+        flex-direction: column;
+    }
+        .profile-title {
+            grid-row: 3/4;
+            grid-column: 1/2;
+        }
+        .profile-subtitle {
+            grid-row: 4/5;
+            grid-column: 1/2;
+        }
+        .profile-title::after {
+            display: none;
+        }
+
+}
