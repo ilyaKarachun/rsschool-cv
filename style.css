@@ -8,7 +8,7 @@ html {
 }
 
 .body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.5;
@@ -134,7 +134,7 @@ html {
 
   .section-link {
       text-decoration: none;
-      color: #010043;
+      color: lightblue;
       transition: .9s;
   }
 
